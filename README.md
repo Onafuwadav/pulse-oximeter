@@ -30,9 +30,9 @@ Heart rate and SpO₂ both worked in the final demo.
 ## System overview
 
 ```mermaid
-graph TD;
+flowchart TD;
   subgraph S["Sensor board: STM32 NUCLEO-L476RG"]
-    direction TD
+    direction LR
     TIM["Timers<br/>PWM + ADC trigger"] --> DRV["MOSFET driver<br/>ZVN4306AV"]
     DRV --> LED["Red/IR bicolour LED<br/>ELM4002"]
     LED -.->|light through fingertip| PD["Photodiode<br/>EPM4001"]
@@ -50,7 +50,7 @@ graph TD;
   end
   TX ==>|"A/B pair, 120 Ω at each end"| RX
   subgraph D["Display board: stripboard"]
-    direction TD
+    direction LR
     RX["RS-485 transceiver"] --> CPLD["MAX II EPM240 CPLD<br/>UART receiver + BCD decoder"]
     XO["1.8432 MHz oscillator"] --> CPLD
     CPLD --> SEG["Two 7-segment digits"]
