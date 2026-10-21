@@ -28,9 +28,8 @@ Heart rate and SpO₂ both worked in the final demo.
 - [Repository layout](#repository-layout)
 
 ## System overview
-
 ```mermaid
-flowchart TD;
+flowchart TD
   subgraph S["Sensor board: STM32 NUCLEO-L476RG"]
     direction LR
     TIM["Timers<br/>PWM + ADC trigger"] --> DRV["MOSFET driver<br/>ZVN4306AV"]
