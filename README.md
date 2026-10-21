@@ -1,6 +1,6 @@
 # Pulse oximeter with a remote display
 
-[![CI](https://github.com/Onafuwadav/pulse-oximeter-stm32-cpld/actions/workflows/ci.yml/badge.svg)](https://github.com/Onafuwadav/pulse-oximeter-stm32-cpld/actions/workflows/ci.yml)
+[![CI](https://github.com/Onafuwadav/pulse-oximeter/actions/workflows/ci.yml/badge.svg)](https://github.com/Onafuwadav/pulse-oximeter/actions/workflows/ci.yml)
 
 **EEEE2070 Electronic Systems Group Design Project · University of Nottingham · 2024–25 · Group 39**
 
