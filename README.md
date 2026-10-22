@@ -146,7 +146,7 @@ A 0.96-inch 128×64 SSD1306 OLED on I²C showed the heart rate, the SpO₂ and t
 
 ### 7. RS-485 link
 
-The STM32 has UARTs but no RS-485 drivers, so an SN65HVD1781 transceiver on a daughter board converts the UART output to RS-485. RS-485 is differential: the receiver looks at the voltage *between* lines A and B rather than at either one against ground, so ground offsets between the two boards don't corrupt the data. A 120 Ω resistor across A and B at each end terminates the line.
+The STM32 has UARTs but no RS-485 drivers, so an SN65HVD1780P transceiver on a daughter board converts the UART output to RS-485. RS-485 is differential: the receiver looks at the voltage *between* lines A and B rather than at either one against ground, so ground offsets between the two boards don't corrupt the data. A 120 Ω resistor across A and B at each end terminates the line.
 
 Link format (fixed by the module specification): **57 600 baud, 8 data bits, no parity, 1 stop bit**, one byte per reading with SpO₂ packed as two 4-bit BCD digits (98 % → `0x98`). The link only sends, so the transceiver's driver-enable pin can be tied to its transmit state in hardware.
 
@@ -337,7 +337,7 @@ GitHub Actions runs the Python tests and the GHDL testbenches on every push ([`.
 
 ## References
 
-- Texas Instruments, *SN65HVD178x 3.3-V/5-V RS-485 transceivers*, datasheet: <https://www.ti.com/lit/ds/symlink/sn65hvd1781.pdf>
+- Texas Instruments, *SN65HVD178x 3.3-V/5-V RS-485 transceivers*, datasheet: <https://www.ti.com/lit/ds/symlink/SN65HVD1780P.pdf>
 - Intel/Altera, *AN-286: Implementing LED Drivers in Altera MAX Series* (application note the module pointed to for the display interface)
 - Kingbright, *SA56-11SURKWA single-digit numeric display*, datasheet
 - Module handouts for EEEE2070 (University of Nottingham, 2024–25). Not reproduced here; the figures on this page are redrawn or generated.
