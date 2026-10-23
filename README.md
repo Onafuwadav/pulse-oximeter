@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/Onafuwadav/pulse-oximeter/actions/workflows/ci.yml/badge.svg)](https://github.com/Onafuwadav/pulse-oximeter/actions/workflows/ci.yml)
 
-**EEEE2070 Electronic Systems Group Design Project · University of Nottingham · 2024–25 · Group 39**
+**Electronic Systems Group Design Project · University of Nottingham · Group 39**
 
 A finger-clip pulse oximeter that measures **heart rate** and **blood-oxygen saturation (SpO₂)**. A Red/IR LED shines through the fingertip, a photodiode front end turns the light into two analogue signals, and an STM32 samples them, computes heart rate by FFT and the SpO₂ by R-value calculation, and shows both on an OLED. The SpO₂ reading is also sent over an RS-485 link to a separate display board, where the CPLD decodes the serial stream and drives two seven-segment digits.
 
