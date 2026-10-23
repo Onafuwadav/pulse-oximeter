@@ -337,10 +337,10 @@ GitHub Actions runs the Python tests and the GHDL testbenches on every push ([`.
 
 ## References
 
-- Texas Instruments, *SN65HVD178x 3.3-V/5-V RS-485 transceivers*, datasheet: <https://www.ti.com/lit/ds/symlink/SN65HVD1780P.pdf>
-- Intel/Altera, *AN-286: Implementing LED Drivers in Altera MAX Series* (application note the module pointed to for the display interface)
+- Texas Instruments, *SN65HVD178x 3.3-V/5-V RS-485 transceivers*, [datasheet](https://www.ti.com/lit/ds/symlink/SN65HVD1780P.pdf)
+- Intel/Altera, *AN-286: Implementing LED Drivers in Altera MAX Series* 
 - Kingbright, *SA56-11SURKWA single-digit numeric display*, datasheet
-- Module handouts for EEEE2070 (University of Nottingham, 2024–25). Not reproduced here; the figures on this page are redrawn or generated.
+- Module handouts (University of Nottingham).
 
 ## Licence
 
