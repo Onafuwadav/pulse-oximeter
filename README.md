@@ -97,11 +97,11 @@ make              # SIM=nvc (GHDL is default)
 
 ## Results
 
-| simulation | Mean Error | Worst Error |
+| simulation | Result #1 | Result #2 |
 |---|---|---|
-| Heart rate 40 to 180 bpm | mean error 0.58 bpm | worst 2.69 bpm |
-| SpO2 85 to 99% | mean error 0.17% | worst 0.74% |
-| VHDL testbench | 131 checks pass | |
+| Heart rate (40 to 180 bpm) | mean error 0.58 bpm | worst error 2.69 bpm |
+| SpO2 (85 to 99%) | mean error 0.17% | worst error 0.74% |
+| VHDL testbench | 131 checks pass | 0 checks fail |
 
 <details>
   <summary>Simulated signal acquisition</summary>
